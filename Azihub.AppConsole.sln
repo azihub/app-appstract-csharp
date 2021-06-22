@@ -11,7 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azihub.AppConsole.Tests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D91F37C-39B2-4CBD-9782-7B39DA4FB027}"
 	ProjectSection(SolutionItems) = preProject
-		azihub.png = azihub.png
+		app-console.png = app-console.png
+		app-console.svg = app-console.svg
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection

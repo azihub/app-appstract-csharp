@@ -20,7 +20,7 @@
     <Copyright>Azihub</Copyright>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageProjectUrl>https://app-console.azihub.com</PackageProjectUrl>
-    <PackageIcon>azihub.png</PackageIcon>
+    <PackageIcon>app-console.png</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/azihub/app-console-csharp</RepositoryUrl>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -35,6 +35,10 @@
       <PackagePath></PackagePath>
     </None>
     <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="app-console.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
