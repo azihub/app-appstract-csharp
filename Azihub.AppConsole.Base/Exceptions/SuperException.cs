@@ -13,18 +13,7 @@ namespace Azihub.AppConsole.Base.Exceptions
         public abstract int Code { get; }
         public abstract string LocaleConst { get; }
 
-
-        public string GetPublicMessage()
-        {
-            return $"[{(int)ErrorCode.Value}]: {PublicMessage}"; // Example : "[1234]: something went wrong"
-        }
-
-        public string GetPrivateMessage()
-        {
-            return $"[{(int)ErrorCode.Value}]: {PrivateMessage}";
-        }
-
-        public SuperException(IErrorCode errorCode) : base()
+        public SuperException(IErrorCode errorCode)
         {
             ErrorCode = errorCode;
         }

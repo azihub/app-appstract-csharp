@@ -4,10 +4,6 @@ namespace Azihub.AppConsole.Base.Exceptions
 {
     public abstract class ApplicationFailureException : Exception, IException
     {
-        public ApplicationFailureException()
-        {
-
-        }
         protected ApplicationFailureException(string message, Exception innerException) : base(message, innerException)
         {
         }

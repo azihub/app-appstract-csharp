@@ -6,7 +6,7 @@ namespace Azihub.AppConsole.Tests.MockService
     public class SignUpService
     {
         /// <summary>
-        /// Businesss Logic Exception
+        /// Business Logic Exception
         /// </summary>
         public const string DUPLICATE_EMAIL = "duplicate@email.com";
 

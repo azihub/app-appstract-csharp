@@ -1,8 +1,5 @@
 ﻿using Azihub.AppConsole.Tests.MockService;
 using Azihub.AppConsole.Tests.MockService.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace Azihub.AppConsole.Tests
