@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Azihub.AppConsole.Tests
+namespace Azihub.Utilities.Tests.ValidatorsTests
 {
-    public class UtilitiesTests
+    public class MobileTests
     {
         [Theory]
         [InlineData(16156182211, true)]   // US Mobile or Landline
