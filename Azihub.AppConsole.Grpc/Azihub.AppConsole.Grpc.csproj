@@ -2,6 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp31</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Azihub</Authors>
+    <Company>Azihub</Company>
+    <Product>App Console Base</Product>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Summary>
+      Handle Grpc Exceptions on Server side and add ServiceColleciton extension to CodeFirstGrpc at startup.cs
+    </Summary>
+    <Description>Handle Grpc Exceptions on Server side and add ServiceColleciton extension to CodeFirstGrpc at startup.cs</Description>
+    <Copyright>Azihub</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://app-console.azihub.com</PackageProjectUrl>
+    <PackageIcon>azihub-appconsole-grpc-logo.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/azihub/app-console-csharp</RepositoryUrl>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Version>0.1.0</Version>
+    <PackageReleaseNotes>AppConsole Exceptions</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +37,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Azihub.AppConsole.Base\Azihub.AppConsole.Base.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="azihub-appconsole-grpc-logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
