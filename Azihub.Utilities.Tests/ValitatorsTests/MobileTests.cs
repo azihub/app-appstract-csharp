@@ -1,4 +1,4 @@
-﻿using Azihub.AppConsole.Base.Utilities;
+﻿using Azihub.Utilities.Base.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Text;

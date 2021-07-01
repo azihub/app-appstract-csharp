@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Azihub.AppConsole.Base.Utilities
+namespace Azihub.Utilities.Base.Utilities
 {
     public static class ValidationBase
     {
