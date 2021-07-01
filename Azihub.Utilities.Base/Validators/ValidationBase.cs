@@ -1,9 +1,6 @@
 ﻿using PhoneNumbers;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Azihub.Utilities.Base.Utilities
+namespace Azihub.Utilities.Base
 {
     public static class ValidationBase
     {
