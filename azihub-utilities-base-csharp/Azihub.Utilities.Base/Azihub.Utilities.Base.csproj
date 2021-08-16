@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Azihub</Authors>
+    <Company>Azihub</Company>
+    <Product>App Utilities Base</Product>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <Summary>
+      Base Exceptions:
+      Business Logic, Application Failure, Security, Super Exceptions
+    </Summary>
+    <Description>Tools:
+- Extension.String.Sha256
+- Path Utilities
+- Validate Mobile number (to send SMS)</Description>
+    <Copyright>Azihub</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/azihub/azihub-utilities-base-csharp</PackageProjectUrl>
+    <PackageIcon>azihub-utilities-icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/azihub/azihub-utilities-base-csharp</RepositoryUrl>
+    <AssemblyVersion>0.1.10.0</AssemblyVersion>
+    <FileVersion>0.1.10.0</FileVersion>
+    <Version>0.1.10</Version>
+    <PackageReleaseNotes>Added PascalToSnakeCase() to object.GetQueryStringTest()</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\azihub-utilities-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotEnvFile" Version="2.1.0" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.26" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+[submodule "azihub-utilities-base-csharp"]
+	path = azihub-utilities-base-csharp
+	url = git@github.com:azihub/azihub-utilities-base-csharp.git
