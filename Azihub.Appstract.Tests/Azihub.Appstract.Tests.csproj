@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Azihub.AppConsole.Base\Azihub.AppConsole.Base.csproj" />
-    <ProjectReference Include="..\Azihub.AppConsole.Grpc\Azihub.AppConsole.Grpc.csproj" />
+    <ProjectReference Include="..\Azihub.Appstract.Base\Azihub.Appstract.Base.csproj" />
+    <ProjectReference Include="..\Azihub.Appstract.Grpc\Azihub.Appstract.Grpc.csproj" />
   </ItemGroup>
 
 </Project>
