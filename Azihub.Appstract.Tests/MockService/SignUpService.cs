@@ -1,7 +1,7 @@
-﻿using Azihub.AppConsole.Tests.MockService.Exceptions;
-using System;
+﻿using System;
+using Azihub.Appstract.Tests.MockService.Exceptions;
 
-namespace Azihub.AppConsole.Tests.MockService
+namespace Azihub.Appstract.Tests.MockService
 {
     public class SignUpService
     {

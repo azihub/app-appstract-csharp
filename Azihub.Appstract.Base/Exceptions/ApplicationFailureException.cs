@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Azihub.AppConsole.Base.Exceptions
+namespace Azihub.Appstract.Base.Exceptions
 {
     public abstract class ApplicationFailureException : Exception, IException
     {

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Azihub.AppConsole.Base.Exceptions;
+using Azihub.Appstract.Base.Exceptions;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using Newtonsoft.Json;
 
-namespace Azihub.AppConsole.Grpc.Interceptors
+namespace Azihub.Appstract.Grpc.Interceptors
 {
     /// <summary>
     /// A base interceptor that handles all server-side exceptions.

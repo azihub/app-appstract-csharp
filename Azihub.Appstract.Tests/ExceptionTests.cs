@@ -1,8 +1,8 @@
-﻿using Azihub.AppConsole.Tests.MockService;
-using Azihub.AppConsole.Tests.MockService.Exceptions;
+﻿using Azihub.Appstract.Tests.MockService;
+using Azihub.Appstract.Tests.MockService.Exceptions;
 using Xunit;
 
-namespace Azihub.AppConsole.Tests
+namespace Azihub.Appstract.Tests
 {
     public class ExceptionTests
     {

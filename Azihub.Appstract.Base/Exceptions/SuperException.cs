@@ -1,7 +1,7 @@
 ﻿using System;
-using Azihub.AppConsole.Base.Exceptions.Interface;
+using Azihub.Appstract.Base.Exceptions.Interface;
 
-namespace Azihub.AppConsole.Base.Exceptions
+namespace Azihub.Appstract.Base.Exceptions
 {
    public abstract class SuperException : Exception, IException
     {

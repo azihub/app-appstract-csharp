@@ -1,6 +1,6 @@
-﻿using Azihub.AppConsole.Base.Exceptions;
+﻿using Azihub.Appstract.Base.Exceptions;
 
-namespace Azihub.AppConsole.Tests.MockService.Exceptions
+namespace Azihub.Appstract.Tests.MockService.Exceptions
 {
     public class BannedEmailException : SecurityException
     {

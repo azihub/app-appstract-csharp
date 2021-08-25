@@ -1,8 +1,8 @@
-﻿using Azihub.AppConsole.Base.Extensions;
+﻿using Azihub.Appstract.Grpc.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace Azihub.AppConsole.Tests
+namespace Azihub.Appstract.Tests
 {
     public class GrpcTests
     {

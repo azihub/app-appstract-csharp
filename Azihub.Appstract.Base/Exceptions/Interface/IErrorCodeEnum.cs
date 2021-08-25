@@ -1,7 +1,7 @@
-﻿namespace Azihub.AppConsole.Base.Exceptions.Interface
+﻿namespace Azihub.Appstract.Base.Exceptions.Interface
 {
     public interface IErrorCode
     {
-        public uint Value { get; }
+        uint Value { get; }
     }
 }

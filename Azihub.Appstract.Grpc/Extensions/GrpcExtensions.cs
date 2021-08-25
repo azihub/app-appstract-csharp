@@ -1,14 +1,14 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Azihub.Appstract.Grpc.Interceptors;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using ProtoBuf.Grpc.Server;
-using Azihub.AppConsole.Grpc.Interceptors;
 
-namespace Azihub.AppConsole.Base.Extensions
+namespace Azihub.Appstract.Grpc.Extensions
 {
     public static class GrpcExtensions
     {
         /// <summary>
-        /// This extension adds the CodeFirstGrpc and CodeFirstGrpcReflection service methods and registers the SsoRpcExceptionsInterceptor class.
+        /// This extension adds the CodeFirstGrpc and CodeFirstGrpcReflection service methods and registers the AppsAuthRpcExceptionsInterceptor class.
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
