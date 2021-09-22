@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using Azihub.Utilities.Base.Extensions.String;
+using Azihub.Utilities.Base.Tools.Annotations;
+using Azihub.Utilities.Base.Tools.DotEnvExceptions;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Azihub.Utilities.Base.Tools
 {
-    using Azihub.Utilities.Base.Extensions.String;
-    using Azihub.Utilities.Base.Tools.DotEnvExceptions;
-    using System;
-    using System.IO;
-    using System.Reflection;
-
     public static class DotEnv
     {
 
@@ -22,20 +24,26 @@ namespace Azihub.Utilities.Base.Tools
 
         public static T Load<T>() where T : new()
         {
-            
+
             PropertyInfo[] propertyInfos;
             propertyInfos = typeof(T).GetProperties();
 
             T container = Activator.CreateInstance<T>();
 
-            var variables = Environment.GetEnvironmentVariables();
+            IDictionary variables = Environment.GetEnvironmentVariables();
 
-            foreach (PropertyInfo property  in propertyInfos)
+            foreach (PropertyInfo property in propertyInfos)
             {
-                string key = property.Name.AddSpaceToPascalCase().ToConstantCase();
+                EnvName envVarName = (EnvName)Attribute.GetCustomAttribute(property, typeof(EnvName));
+                string key;
+                if(envVarName?.Name != null)
+                    key = envVarName.Name;
+                else
+                    key = property.Name.AddSpaceToPascalCase().ToConstantCase();
+
                 if (variables.Contains(key))
                 {
-                    var type = property.PropertyType;
+                    Type type = property.PropertyType;
                     //property.SetValue(container, (property.PropertyType) variables[key]);
                     property.SetValue(container, Convert.ChangeType(variables[key], property.PropertyType));
                 }
@@ -44,6 +52,14 @@ namespace Azihub.Utilities.Base.Tools
             }
 
             return container;
+        }
+
+        public static string GetEnvName(this Type value, string propertyName)
+        {
+            return ((EnvName)Attribute.GetCustomAttribute(
+                value.GetProperties().First(x =>x.Name == propertyName), typeof(EnvName)
+                )
+            ).Name;
         }
     }
 }

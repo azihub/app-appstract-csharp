@@ -8,6 +8,6 @@ namespace Azihub.Utilities.Base.Tools.DotEnvExceptions
     public class EnvironmentVariableIsNotSetException : Exception
     {
         public EnvironmentVariableIsNotSetException(string property) : 
-            base($"Property of {property} is not set in Environment variables") { }
+            base($"Property of `{property}` is not set within environment variables") { }
     }
 }
