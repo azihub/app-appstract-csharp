@@ -10,16 +10,14 @@ namespace Azihub.Utilities.Base.JsonConverters
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            MailAddress mailAddress = value as MailAddress;
-            writer.WriteValue(mailAddress == null ? string.Empty : mailAddress.ToString());
+            writer.WriteValue(!(value is MailAddress mailAddress) ? string.Empty : mailAddress.ToString());
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             string text = reader.Value as string;
-            MailAddress mailAddress;
 
-            return IsValidMailAddress(text, out mailAddress) ? mailAddress : null;
+            return IsValidMailAddress(text, out MailAddress mailAddress) ? mailAddress : null;
         }
 
         public override bool CanConvert(Type objectType)

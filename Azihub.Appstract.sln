@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azihub.Utilities.Base", "az
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azihub.Utilities.Tests", "azihub-utilities-base-csharp\Azihub.Utilities.Tests\Azihub.Utilities.Tests.csproj", "{DBDD84CA-5DA5-45A7-9558-6D36337CDE73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azihub.Utilities.WebDriver", "azihub-utilities-base-csharp\Azihub.Utilities.WebDriver\Azihub.Utilities.WebDriver.csproj", "{AF9C3077-0FD0-4E9D-B4D3-A9A9A04A4E3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{DBDD84CA-5DA5-45A7-9558-6D36337CDE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDD84CA-5DA5-45A7-9558-6D36337CDE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDD84CA-5DA5-45A7-9558-6D36337CDE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9C3077-0FD0-4E9D-B4D3-A9A9A04A4E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9C3077-0FD0-4E9D-B4D3-A9A9A04A4E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9C3077-0FD0-4E9D-B4D3-A9A9A04A4E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9C3077-0FD0-4E9D-B4D3-A9A9A04A4E3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
