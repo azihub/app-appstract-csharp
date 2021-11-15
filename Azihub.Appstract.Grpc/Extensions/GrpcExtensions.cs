@@ -12,13 +12,15 @@ namespace Azihub.Appstract.Grpc.Extensions
         /// This extension adds the CodeFirstGrpc and CodeFirstGrpcReflection service methods and registers the AppsAuthRpcExceptionsInterceptor class.
         /// </summary>
         /// <param name="services"></param>
+        /// <param name="enableDetailedErrors"></param>
         /// <returns></returns>
-        public static IServiceCollection AddAndConfigureCodeFirstGrpc(this IServiceCollection services)
+        public static IServiceCollection AddAndConfigureCodeFirstGrpc(this IServiceCollection services, bool enableDetailedErrors = false)
         {
             services.AddCodeFirstGrpc(config =>
             {
                 config.Interceptors.Add(typeof(RpcExceptionsInterceptor));
                 config.ResponseCompressionLevel = System.IO.Compression.CompressionLevel.Optimal;
+                config.EnableDetailedErrors = enableDetailedErrors;
             });
 
             services.TryAddSingleton(RpcExceptionsInterceptor.Instance);
